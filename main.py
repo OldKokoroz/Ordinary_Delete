@@ -1,10 +1,10 @@
 import os
 from time import sleep
 
-attack = ""  # full path of the directory you want to delete things
+attack = 'C:\'  # full path of the directory you want to delete things
 # Just keep it default like C:\\ and just enter file or directory names you want to delete !"with extensions"!
 
-to_del = ["delete1.txt", "delete2.txt"]
+to_del = ["delete1.txt", "delete2"]
 
 
 def mass_del():
@@ -48,7 +48,7 @@ def mass_del():
             Searched Directories : {len(dirs)}
             Searched Files       : {total_files + deleted} 
             Deleted  Files       : {deleted}
-            Left     Files       : {total_files}
+            Remain   Files       : {total_files}
             """)
 
     except KeyboardInterrupt:
