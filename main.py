@@ -18,7 +18,7 @@ def mass_del():
         total_files = 0
 
         for _ in os.listdir():
-            print(os.listdir())
+            _ = _.split(".")[0]
             if _ in to_del:
                 os.remove(f"{os.getcwd()}/{_}")
                 deleted += 1
